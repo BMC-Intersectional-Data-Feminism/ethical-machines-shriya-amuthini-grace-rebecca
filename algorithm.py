@@ -16,7 +16,7 @@ def always_pick_non_vehicle(option1, option2):
 # Student function placeholder
 def student_algorithm(option1, option2):
     """Students define their own algorithm here."""
-    print('Write your own algorithm here!')
+    # print('Write your own algorithm here!')
 
     rank1 = -1
     rank2 = -1
