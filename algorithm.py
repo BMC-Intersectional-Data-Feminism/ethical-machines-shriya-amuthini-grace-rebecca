@@ -103,7 +103,9 @@ def pick_emergancy_vehicle(option1, option2):
 #urban_planning.run_activity()
 
 # Run the activity using the example algorithm
-print("\n🔹 Running Example Algorithm: Always Pick Non-Vehicle 🔹")
-urban_planning.run_activity(num_scenarios=25, decision_function = student_algorithm)
+# print("\n🔹 Running Example Algorithm: Always Pick Non-Vehicle 🔹")
+# urban_planning.run_activity(num_scenarios=25, decision_function = student_algorithm)
 
 #print("\n🔹 Now it's your turn! Modify 'student_algorithm' and run again. 🔹")
+print("\n🔹 Running Student Algorithm")
+urban_planning.run_activity(num_scenarios=25, decision_function = student_algorithm)
