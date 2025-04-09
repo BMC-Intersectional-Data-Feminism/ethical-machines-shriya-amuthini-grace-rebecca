@@ -21,6 +21,8 @@ def student_algorithm(option1, option2):
     rank1 = -1
     rank2 = -1
 
+    immoral_tags = ['Criminal fleeing scene', 'Speeding', 'Wrong lane']
+
     possible_ev = urban_planning.vehicles["Emergency Vehicle"]
     if option1[0] in possible_ev:
         rank1 = 1
@@ -62,6 +64,11 @@ def student_algorithm(option1, option2):
         rank1 = 7
     elif option2[0] in possible_robot:
         rank2 = 7
+
+    if option1[1] in immoral_tags and rank1 != 1:
+        rank1 = 8
+    elif option2[1] in immoral_tags and rank2 != 1:
+        rank2 = 8
 
     if rank1 <= rank2:
         return option1, option2
