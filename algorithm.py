@@ -19,10 +19,10 @@ def student_algorithm(option1, option2):
 
 # Function to run the simulation using a given algorithm
 # Run the activity
-urban_planning.run_activity()
+#urban_planning.run_activity()
 
 # Run the activity using the example algorithm
-#print("\n🔹 Running Example Algorithm: Always Pick Non-Vehicle 🔹")
-#urban_planning.run_activity(num_scenarios=25, decision_function = always_pick_non_vehicle)
+print("\n🔹 Running Example Algorithm: Always Pick Non-Vehicle 🔹")
+urban_planning.run_activity(num_scenarios=25, decision_function = always_pick_non_vehicle)
 
 #print("\n🔹 Now it's your turn! Modify 'student_algorithm' and run again. 🔹")
